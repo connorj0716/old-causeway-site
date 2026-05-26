@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Private events and catering at The Old Causeway — rehearsal dinners, showers, corporate buyouts and off-site catering across LBI. Full-service event planning." />
+<title>Private Events &amp; Catering — The Old Causeway</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/oc-logo.png" />
+  <link rel="apple-touch-icon" href="assets/oc-logo.png" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+.events-tabs {
+  display: flex; justify-content: center; gap: 8px;
+  margin: 0 auto 60px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 20px 0;
+}
+.event-form {
+  max-width: 760px; margin: 0 auto;
+  background: rgba(20, 34, 53, 0.6);
+  border: 1px solid var(--line);
+  padding: 50px;
+}
+.event-form .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.event-form .row.full { grid-template-columns: 1fr; }
+.event-form label {
+  font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
+  color: rgba(245, 239, 228, 0.55); margin-bottom: 8px; display: block;
+}
+.event-form input, .event-form select, .event-form textarea {
+  width: 100%;
+  background: var(--navy-deep);
+  border: 1px solid var(--line);
+  padding: 14px 16px;
+  color: var(--cream);
+  font-family: inherit; font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s var(--transition);
+}
+.event-form input:focus, .event-form select:focus, .event-form textarea:focus {
+  border-color: var(--brass);
+}
+.event-form textarea { min-height: 120px; resize: vertical; }
+@media (max-width: 640px) { .event-form .row { grid-template-columns: 1fr; } .event-form { padding: 30px; } }
+</style>
+</head>
+<body>
+
+<nav class="nav solid" id="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="brand"><img class="logo" src="assets/oc-logo.png" alt="The Old Causeway — Steak & Oyster House" /></a>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="music.html">Live Music</a></li>
+      <li><a href="events.html" class="current">Private Events</a></li>
+      <li><a href="visit.html">Visit</a></li>
+    </ul>
+    <a href="https://www.opentable.com/r/the-old-causeway-steak-and-oyster-house-manahawkin" target="_blank" rel="noopener" class="nav-cta">Reserve a Table</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="subhero">
+  <div class="bg"><img src="assets/oc-catering.jpg" alt="Catering spread by Old Causeway" /></div>
+  <div class="inner">
+    <div class="script" style="color:var(--brass); font-size:clamp(1.6rem, 3vw, 2.4rem); margin-bottom:8px;">gather your people</div>
+    <h1>Private Events &amp; Catering</h1>
+    <p>Rehearsal dinners, corporate buyouts, milestone celebrations, and off-site catering across LBI. We handle the details — start to finish.</p>
+  </div>
+</section>
+
+<!-- ON-SITE EVENTS -->
+<section class="events">
+  <div class="container">
+    <div class="events-grid">
+      <div class="events-image reveal" style="background-image:url('assets/oc-brunch.jpg');"></div>
+      <div class="events-text reveal delay-1">
+        <span class="eyebrow">On-Site Private Events</span>
+        <h2>Your night, on the bay.</h2>
+        <p>
+          From bayside rehearsal dinners to corporate buy-outs, our private spaces are designed for the
+          kinds of nights you'll talk about for years. Three event rooms, a full-service patio, and a
+          dedicated events team that handles the details — start to finish.
+        </p>
+        <ul class="events-list">
+          <li>Rehearsal dinners &amp; welcome parties</li>
+          <li>Corporate dinners &amp; full buyouts (up to 220)</li>
+          <li>Bridal &amp; baby showers</li>
+          <li>Holiday parties &amp; milestone celebrations</li>
+          <li>Memorial luncheons</li>
+          <li>Custom menus, A/V, and dedicated event captain</li>
+        </ul>
+        <a href="#inquire" class="btn btn-primary btn-arrow">Plan Your Event</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATERING -->
+<section class="events" style="background: var(--navy-deep);">
+  <div class="container">
+    <div class="events-grid">
+      <div class="events-text reveal">
+        <span class="eyebrow">Off-Site Catering</span>
+        <h2>The Causeway, delivered.</h2>
+        <p>
+          From clambakes on the beach to holiday spreads at the office — our catering team brings the
+          full Old Causeway lineup to wherever you're gathering. Raw bar, seafood towers, signature
+          steaks, half-tray entrees, sliders, salads and dessert by the platter.
+        </p>
+        <ul class="events-list">
+          <li>Raw Bar &amp; seafood tower setups</li>
+          <li>Hot &amp; cold entrees by the half-tray</li>
+          <li>Slider stations &amp; bar bites</li>
+          <li>Salad boards &amp; sides</li>
+          <li>Dessert platters &amp; coffee service</li>
+          <li>Full equipment rental available</li>
+        </ul>
+        <div class="menu-note" style="margin-bottom: 30px;">
+          <strong style="color: var(--brass); font-style: normal;">Heads up —</strong>
+          All catering orders require 24 hours advance notice. Dessert orders require 48 hours.
+          Pricing and items subject to change.
+        </div>
+        <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+          <a href="mailto:derek@oldcauseway.com?subject=Catering%20Inquiry" class="btn btn-primary btn-arrow">Email Catering</a>
+          <a href="tel:6094881327" class="btn btn-ghost">Call (609) 488-1327</a>
+        </div>
+      </div>
+      <div class="events-image reveal delay-1" style="background-image:url('assets/oc-catering.jpg');"></div>
+    </div>
+  </div>
+</section>
+
+<!-- INQUIRY FORM -->
+<section style="background: var(--navy);" id="inquire">
+  <div class="container">
+    <div class="section-header center reveal">
+      <span class="eyebrow center">Tell Us About Your Event</span>
+      <h2 style="margin-top:24px;">Let's start planning.</h2>
+      <p style="color: rgba(245, 239, 228, 0.7); max-width: 580px; margin: 24px auto 0;">
+        Drop us a note. Our events team responds within one business day with availability,
+        space options and a menu tailored to your gathering.
+      </p>
+    </div>
+
+    <form class="event-form reveal" onsubmit="event.preventDefault(); alert('Thanks! Your inquiry has been sent — our events team will reach out within one business day.');">
+      <div class="row">
+        <div>
+          <label>First Name</label>
+          <input type="text" required placeholder="Jane" />
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input type="text" required placeholder="Smith" />
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Email</label>
+          <input type="email" required placeholder="you@email.com" />
+        </div>
+        <div>
+          <label>Phone</label>
+          <input type="tel" placeholder="(609) 555-0100" />
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Event Type</label>
+          <select>
+            <option>Rehearsal Dinner</option>
+            <option>Welcome Party</option>
+            <option>Bridal / Baby Shower</option>
+            <option>Corporate Dinner / Buyout</option>
+            <option>Holiday Party</option>
+            <option>Birthday / Milestone</option>
+            <option>Memorial Luncheon</option>
+            <option>Off-Site Catering</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div>
+          <label>Guest Count</label>
+          <select>
+            <option>10 – 20</option>
+            <option>20 – 40</option>
+            <option>40 – 80</option>
+            <option>80 – 140</option>
+            <option>140 – 220 (Buyout)</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <label>Preferred Date</label>
+          <input type="date" />
+        </div>
+        <div>
+          <label>Preferred Time</label>
+          <select>
+            <option>Lunch (11 AM – 2 PM)</option>
+            <option>Afternoon (2 PM – 5 PM)</option>
+            <option selected>Dinner (5 PM – 9 PM)</option>
+            <option>Late Night (9 PM +)</option>
+          </select>
+        </div>
+      </div>
+      <div class="row full">
+        <div>
+          <label>Tell us more</label>
+          <textarea placeholder="Tell us about your vision — any dietary needs, music preferences, A/V requirements, or special touches we should know about."></textarea>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-arrow" style="width: 100%; padding: 18px;">Send Inquiry</button>
+      <p style="text-align: center; font-size: 0.78rem; color: rgba(245, 239, 228, 0.5); margin-top: 16px;">
+        Or email <a href="mailto:derek@oldcauseway.com" style="color: var(--brass);">derek@oldcauseway.com</a> directly.
+      </p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img class="footer-logo" src="assets/oc-logo.png" alt="The Old Causeway" />
+        <p>An LBI gathering place since 1914. On the bay in Manahawkin — over the bridge, just before the island.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/oldcauseway" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/oldcauseway" target="_blank" rel="noopener" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="mailto:info@oldcauseway.com" aria-label="Email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Discover</h4>
+        <ul>
+          <li><a href="story.html">Our Story</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="music.html">Live Music</a></li>
+          <li><a href="events.html">Private Events</a></li>
+          <li><a href="https://www.facebook.com/oldcauseway/photos" target="_blank" rel="noopener">Photo Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col"><h4>Plan Your Visit</h4>
+        <ul>
+          <li><a href="https://www.opentable.com/r/the-old-causeway-steak-and-oyster-house-manahawkin" target="_blank" rel="noopener">Reservations</a></li>
+          <li><a href="https://www.toasttab.com/old-causeway" target="_blank" rel="noopener">Order Online</a></li>
+          <li><a href="events.html">Catering</a></li>
+          <li><a href="visit.html">Hours &amp; Directions</a></li>
+          <li><a href="visit.html#shuttle">Courtesy Shuttle</a></li>
+        </ul>
+      </div>
+      <div class="footer-col"><h4>Contact</h4>
+        <ul>
+          <li><span>1201 E. Bay Avenue</span></li>
+          <li><span>Manahawkin, NJ 08050</span></li>
+          <li><a href="tel:6094881327">(609) 488-1327</a></li>
+          <li><a href="mailto:info@oldcauseway.com">info@oldcauseway.com</a></li>
+          <li><a href="mailto:derek@oldcauseway.com">derek@oldcauseway.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 The Old Causeway · Steak &amp; Oyster House. All rights reserved.</div>
+      <div>A proud member of the <a href="https://tidetablegroup.com" target="_blank" rel="noopener" class="tide-link">Tide Table Group</a>.</div>
+    </div>
+  </div>
+</footer>
+
+<a href="https://www.opentable.com/r/the-old-causeway-steak-and-oyster-house-manahawkin" target="_blank" rel="noopener" class="float-cta" id="floatCta">Reserve a Table</a>
+
+<script src="script.js"></script>
+</body>
+</html>
