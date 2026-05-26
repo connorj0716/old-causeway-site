@@ -2,7 +2,8 @@
 
 A redesigned marketing site for The Old Causeway, an LBI bayside steak and oyster house and member of the Tide Table Group. Built as a static, multi-page site for fast hosting (Vercel) and easy maintenance.
 
-**Live:** _(Vercel URL goes here after first deploy)_
+**Live:** https://old-causeway-site.vercel.app
+**Repo:** https://github.com/connorj0716/old-causeway-site
 **Current site (for reference):** https://www.oldcauseway.com
 
 ## Pages
