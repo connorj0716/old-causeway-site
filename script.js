@@ -28,7 +28,17 @@ tabs.forEach(t => t.addEventListener('click', () => {
   const target = t.dataset.tab;
   tabs.forEach(x => x.classList.toggle('active', x === t));
   panels.forEach(p => p.classList.toggle('active', p.dataset.panel === target));
-  window.scrollTo({ top: document.querySelector('.menu-tabs').offsetTop - 20, behavior: 'smooth' });
+
+  // Scroll so the top of the menu section sits just below the fixed nav.
+  // Only scroll up if the user is below that point — don't jerk them down.
+  const menuPage = document.querySelector('.menu-page');
+  if (menuPage) {
+    const navOffset = window.innerWidth < 560 ? 60 : 90;
+    const targetY = menuPage.getBoundingClientRect().top + window.scrollY - navOffset;
+    if (window.scrollY > targetY + 20) {
+      window.scrollTo({ top: targetY, behavior: 'smooth' });
+    }
+  }
 }));
 
 /* ---------- Reveal on scroll ---------- */
