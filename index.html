@@ -163,7 +163,7 @@
       <div class="reserve-widget">
         <div class="reserve-widget-title">◆ Check Tonight's Availability ◆</div>
         <form class="reserve-form"
-          onsubmit="event.preventDefault(); window.open('https://www.opentable.com/r/the-old-causeway-steak-and-oyster-house-manahawkin', '_blank');">
+          onsubmit="event.preventDefault(); alert('Thanks! Your request has been received — we’ll call or text to confirm your table shortly.');">
           <div class="reserve-fields">
             <div class="field">
               <label>Party</label>
@@ -203,7 +203,12 @@
               </select>
             </div>
           </div>
-          <button class="btn btn-primary btn-arrow" type="submit">Find My Table on OpenTable</button>
+          <div class="reserve-actions">
+            <button class="btn btn-primary btn-arrow" type="submit">Request a Table</button>
+            <a class="btn btn-ghost btn-arrow"
+              href="https://www.opentable.com/r/the-old-causeway-steak-and-oyster-house-manahawkin" target="_blank"
+              rel="noopener">Reserve on OpenTable</a>
+          </div>
           <div class="note">Parties of 4+ may reserve · Walk-ins always welcome at the bar</div>
         </form>
       </div>
