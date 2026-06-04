@@ -477,7 +477,6 @@ section { position: relative; padding: clamp(80px, 12vw, 160px) 0; }
   text-align: center;
   font-family: 'Cormorant Garamond', serif;
   box-shadow: var(--shadow-deep);
-  animation: rotate 32s linear infinite;
 }
 .story-image .badge-inner {
   font-size: 0.65rem;
